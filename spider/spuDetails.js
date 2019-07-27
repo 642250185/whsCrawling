@@ -24,6 +24,7 @@ const getDetails = async (mid, cookie) => {
             items.mid       = mid;
             items.mname     = mname;
             items.questions = questions;
+            console.info(`mid: ${mid}, 采集完成`);
             return items;
         } else {
             console.warn(`${errcode}  ${errstr}`);
